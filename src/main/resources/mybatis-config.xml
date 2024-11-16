@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--设置日志-->
+    <settings>
+        <!--配置经典数据库命名法自动映射驼峰命名法的属性-->
+        <setting name="mapUnderscoreToCamelCase" value="true" />
+        <setting name="autoMappingBehavior" value="FULL" />
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+    <typeAliases>
+        <package name="cn.njust.myschool.entity"/>
+    </typeAliases>
+    <mappers>
+        <mapper resource="mapper/UserMapper.xml"></mapper>
+    </mappers>
+</configuration>
