@@ -1,1 +1,1 @@
-* Basic Structure of SSM
+Basic Structure of SSM
